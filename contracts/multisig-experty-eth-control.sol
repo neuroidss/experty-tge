@@ -33,13 +33,13 @@ contract MultisigExpertyEthControl {
   function MultisigExpertyEthControl() public {
     // 6 signatories:
     // 3 from Bitcoin Suisse:
-    isSignatory[0x123] = true;
-    isSignatory[0x123] = true;
-    isSignatory[0x123] = true;
+    isSignatory[0x5652CcC667f974EcB618a8D2A9C742C029Fa5533] = true;
+    isSignatory[0x9Fc687493D619A6258B71d5e05faa4C40bd67A77] = true;
+    isSignatory[0xC289533819E8858B8b832E9f30352b00E96Be639] = true;
     // 3 from Experty AG:
-    isSignatory[0x123] = true;
-    isSignatory[0x123] = true;
-    isSignatory[0x123] = true;
+    isSignatory[0xe115c9788615511736F88c0DBB7282569611a338] = true;
+    isSignatory[0x0B0371682DAA1aBEC52B39b65d66BEA5CbEE84aC] = true;
+    isSignatory[0x5059C45264E6Cba7D8D805Cf5Cc54A881CF0DB73] = true;
 
     // set required signatures
     requiredSignatures = 4;

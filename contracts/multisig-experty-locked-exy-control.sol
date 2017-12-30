@@ -7,7 +7,7 @@ contract ExpertyToken {
 
 // multisignature contract, that is able to control
 // ethers stored in experty token contract
-contract MultisigExpertyEthControl {
+contract MultisigExpertyExyControl {
 
   address expertyTokenAddr;
 
@@ -31,19 +31,14 @@ contract MultisigExpertyEthControl {
   Tx[] public txs;
 
   // 4 from 6 multisig wallet
-  function MultisigExpertyEthControl() public {
-    // 6 signatories:
-    // 3 from Bitcoin Suisse:
-    isSignatory[0x123] = true;
-    isSignatory[0x123] = true;
-    isSignatory[0x123] = true;
-    // 3 from Experty AG:
-    isSignatory[0x123] = true;
-    isSignatory[0x123] = true;
-    isSignatory[0x123] = true;
+  function MultisigExpertyExyControl() public {
+    // 3 signatories from Experty:
+    isSignatory[0xe115c9788615511736F88c0DBB7282569611a338] = true;
+    isSignatory[0x0B0371682DAA1aBEC52B39b65d66BEA5CbEE84aC] = true;
+    isSignatory[0x5059C45264E6Cba7D8D805Cf5Cc54A881CF0DB73] = true;
 
     // set required signatures
-    requiredSignatures = 4;
+    requiredSignatures = 2;
   }
 
   // set experty token address after deploying experty token contract
